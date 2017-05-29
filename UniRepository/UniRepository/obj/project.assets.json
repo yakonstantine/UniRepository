@@ -4328,15 +4328,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\koia\\.nuget\\packages\\": {}
+    "C:\\Users\\Константин\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkProjects\\yakonstantine\\UniRepository\\UniRepository\\UniRepository.Core\\UniRepository.Core.csproj",
-      "projectName": "UniRepository.Core",
-      "projectPath": "D:\\WorkProjects\\yakonstantine\\UniRepository\\UniRepository\\UniRepository.Core\\UniRepository.Core.csproj",
-      "outputPath": "D:\\WorkProjects\\yakonstantine\\UniRepository\\UniRepository\\UniRepository.Core\\obj\\",
+      "projectUniqueName": "K:\\Work\\yaGitHub\\UniRepository\\UniRepository\\UniRepository\\UniRepository.csproj",
+      "projectName": "UniRepository",
+      "projectPath": "K:\\Work\\yaGitHub\\UniRepository\\UniRepository\\UniRepository\\UniRepository.csproj",
+      "outputPath": "K:\\Work\\yaGitHub\\UniRepository\\UniRepository\\UniRepository\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.6"

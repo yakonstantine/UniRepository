@@ -1,0 +1,7 @@
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\bin\Debug\netstandard1.4\UniRepository.deps.json
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\bin\Debug\netstandard1.4\UniRepository.dll
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\bin\Debug\netstandard1.4\UniRepository.pdb
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\obj\Debug\netstandard1.4\UniRepository.csprojResolveAssemblyReference.cache
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\obj\Debug\netstandard1.4\UniRepository.AssemblyInfo.cs
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\obj\Debug\netstandard1.4\UniRepository.dll
+D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository\obj\Debug\netstandard1.4\UniRepository.pdb
