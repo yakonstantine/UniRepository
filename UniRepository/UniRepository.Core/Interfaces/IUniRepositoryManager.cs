@@ -7,11 +7,11 @@ namespace UniRepository.Core.Interfaces
     public interface IUniRepositoryManager
     {
         IUniRepository<TEntity, TKey> GetRepoFor<TEntity, TKey>()
-            where TEntity : IEntity<TKey>
-            where TKey : struct;
+            where TKey : struct
+            where TEntity : class, IEntity<TKey>;
 
         IUniRepositoryAsync<TEntity, TKey> GetAsyncRepoFor<TEntity, TKey>()
-            where TEntity : IEntity<TKey>
-            where TKey : struct;
+            where TKey : struct
+            where TEntity : class, IEntity<TKey>;
     }
 }

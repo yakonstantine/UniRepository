@@ -7,16 +7,16 @@ namespace UniRepository.Core.Interfaces
 {
     public interface IUniRepositoryAsync<TEntity, TKey>
         where TKey : struct
-        where TEntity : IEntity<TKey>
+        where TEntity : class, IEntity<TKey>
     {
         IUniRepositoryAsync<TEntity, TKey> Include<TProperty>(Expression<Func<TEntity, TProperty>> expression);
 
         IQueryable<TEntity> GetAll();
 
-        Task<TEntity> FindByIdAsync(TKey id);
+        Task<TEntity> FindByKeyAsync(TKey key);
 
         Task SaveAsync(TEntity entity);
 
-        Task RemoveAsync(TKey id);
+        Task RemoveAsync(TKey key);
     }
 }

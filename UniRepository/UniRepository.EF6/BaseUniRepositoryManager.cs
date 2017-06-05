@@ -11,13 +11,13 @@ namespace UniRepository.EF6
         protected abstract DbContext GetDBContext();
 
         public IUniRepository<TEntity, TKey> GetRepoFor<TEntity, TKey>()
-            where TEntity : IEntity<TKey>
             where TKey : struct
+            where TEntity : class, IEntity<TKey>
             => new UniRepository<TEntity, TKey>(GetDBContext());
 
         public IUniRepositoryAsync<TEntity, TKey> GetAsyncRepoFor<TEntity, TKey>()
-            where TEntity : IEntity<TKey>
             where TKey : struct
+            where TEntity : class, IEntity<TKey>
             => new UniRepositoryAsync<TEntity, TKey>(GetDBContext);
     }
 }

@@ -4,5 +4,7 @@
         where TKey : struct
     {
         TKey Id { get; set; }
+
+        void UpdateFrom(IEntity<TKey> entity);
     }
 }

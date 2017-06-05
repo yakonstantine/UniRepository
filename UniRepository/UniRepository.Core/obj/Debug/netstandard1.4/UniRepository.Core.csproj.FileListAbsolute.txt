@@ -5,3 +5,15 @@ D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository.Core\obj
 D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.AssemblyInfo.cs
 D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.dll
 D:\WorkProjects\yakonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.pdb
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.deps.json
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.dll
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.pdb
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.AssemblyInfo.cs
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.dll
+K:\Work\yaKonstantine\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.pdb
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.deps.json
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.AssemblyInfo.cs
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Debug\netstandard1.4\UniRepository.Core.pdb
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.4\UniRepository.Core.pdb

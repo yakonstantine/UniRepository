@@ -7,7 +7,7 @@ namespace UniRepository.EF6
 {
     internal class UniRepository<TEntity, TKey> : IUniRepository<TEntity, TKey>
         where TKey : struct
-        where TEntity : IEntity<TKey>
+        where TEntity : class, IEntity<TKey>
     {
         private DbContext _dbContext;
 
@@ -16,7 +16,7 @@ namespace UniRepository.EF6
             _dbContext = dbContext;
         }
 
-        public TEntity FindById(TKey id)
+        public TEntity FindByKey(TKey id)
         {
             throw new NotImplementedException();
         }
