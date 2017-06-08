@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UniRepository.EF6</RootNamespace>
     <AssemblyName>UniRepository.EF6</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseUniRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UniRepository.cs" />
     <Compile Include="UniRepositoryAsync.cs" />

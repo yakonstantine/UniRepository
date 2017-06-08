@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.0-alpha</Version>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>0.2.0</Version>
     <Authors>Konstantin Yakovlev</Authors>
-    <Product>UniRepository</Product>
     <Company />
-    <FileVersion>1.0.0.0</FileVersion>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <Copyright>Copyright 2017</Copyright>
-    <PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl>https://github.com/yakonstantine/UniRepository</RepositoryUrl>
+    <Product>UniRepository</Product>
     <Description>UniRepository.Core includes the main interfaces for the UniRepository library.</Description>
+    <Copyright>Copyright 2017</Copyright>
+    <PackageTags>Repository, Repository-Pattern, Universal, EntityFramework</PackageTags>
+    <PackageReleaseNotes>Refined repository interfaces</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/yakonstantine/UniRepository</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yakonstantine/UniRepository</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

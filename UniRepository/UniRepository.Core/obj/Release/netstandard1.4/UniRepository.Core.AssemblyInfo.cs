@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Konstantin Yakovlev")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("UniRepository.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright 2017")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("UniRepository.Core includes the main interfaces for the UniRepository library.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0-alpha")]
-[assembly: System.Reflection.AssemblyProductAttribute("UniRepository")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("UniRepository.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniRepository.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

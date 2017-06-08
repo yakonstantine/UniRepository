@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v1.4": {},
     ".NETStandard,Version=v1.4/": {
-      "unirepository.core/0.1.0-alpha": {
+      "unirepository.core/0.1.1-alpha": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
         },
@@ -565,7 +565,7 @@
     }
   },
   "libraries": {
-    "unirepository.core/0.1.0-alpha": {
+    "unirepository.core/0.1.1-alpha": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

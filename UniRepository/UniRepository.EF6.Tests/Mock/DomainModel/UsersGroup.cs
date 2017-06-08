@@ -9,10 +9,5 @@ namespace UniRepository.EF6.Tests.Mock.DomainModel
         public string Name { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-
-        public int GroupTupeId { get; set; }
-
-        [ForeignKey("GroupTupeId")]
-        public virtual GroupType GroupType { get; set; }
     }
 }

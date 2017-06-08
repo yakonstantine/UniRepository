@@ -9,43 +9,36 @@ using UniRepository.Core.Interfaces;
 
 namespace UniRepository.EF6
 {
-    internal class UniRepositoryAsync<TEntity, TKey> : IUniRepositoryAsync<TEntity, TKey>
+    internal class UniRepositoryAsync<TEntity, TKey> : BaseUniRepository<TEntity, TKey>, IUniRepositoryAsync<TEntity, TKey>
         where TKey : struct
         where TEntity : class, IEntity<TKey>
     {
         private Func<DbContext> _GetDbContext;
-        private IList<string> _includeProperties = new List<string>();
 
         public UniRepositoryAsync(Func<DbContext> GetDbContext)
         {
             _GetDbContext = GetDbContext;
         }
 
-        public IUniRepositoryAsync<TEntity, TKey> Include<TProperty>(Expression<Func<TEntity, TProperty>> expression)
-        {
-            var propertyName = GetPropertyName(expression);
+        public new IUniRepositoryAsync<TEntity, TKey> Include(string path)
+            => (IUniRepositoryAsync<TEntity, TKey>)base.Include(path);
 
-            if (_includeProperties.Contains(propertyName))
-                return this;
-
-            _includeProperties.Add(propertyName);
-
-            return this;
-        }
+        public new IUniRepositoryAsync<TEntity, TKey> Include<TProperty>(Expression<Func<TEntity, TProperty>> expression)
+            => (IUniRepositoryAsync<TEntity, TKey>)base.Include(expression);
 
         public IQueryable<TEntity> GetAll()
         {
-            return GetAll(_GetDbContext());
+            return GetAll(_GetDbContext?.Invoke());
         }
 
         public async Task<TEntity> FindByKeyAsync(TKey key)
         {
-            return await FindByKeyAsync(key, _GetDbContext());
+            return await FindByKeyAsync(key, _GetDbContext?.Invoke());
         }
 
         public async Task SaveAsync(TEntity entity)
         {
-            using (var dbContext = _GetDbContext())
+            using (var dbContext = _GetDbContext?.Invoke())
             {
                 var target = await FindByKeyAsync(entity.Id, dbContext);
 
@@ -60,13 +53,14 @@ namespace UniRepository.EF6
 
                 await dbContext.SaveChangesAsync();
 
-                entity.UpdateFrom(target);
+                if (target != null)
+                    entity.UpdateFrom(target);
             }
         }
 
         public async Task RemoveAsync(TKey key)
         {
-            using (var dbContext = _GetDbContext())
+            using (var dbContext = _GetDbContext?.Invoke())
             {
                 var entity = await FindByKeyAsync(key, dbContext);
 
@@ -76,45 +70,10 @@ namespace UniRepository.EF6
             }
         }
 
-        private IQueryable<TEntity> GetAll(DbContext dbContext)
-        {
-            IQueryable<TEntity> queryableCollection = dbContext.Set<TEntity>();
-
-            foreach (var propertyName in _includeProperties)
-            {
-                queryableCollection = queryableCollection.Include(propertyName);
-            }
-
-            _includeProperties.Clear();
-
-            return queryableCollection;
-        }
-
         private async Task<TEntity> FindByKeyAsync(TKey key, DbContext dbContext)
         {
-            return await GetAll(dbContext)
-                    .Where(x => x.Id.Equals(key))
-                    .SingleOrDefaultAsync();
-        }
-
-        private string GetPropertyName<TProperty>(Expression<Func<TEntity, TProperty>> expression)
-        {
-            var memberExpression = expression.Body as MemberExpression;
-
-            if (memberExpression == null)
-                throw new ArgumentException($"Expression '{expression.ToString()}' refers to a method, not a property.");
-
-            var propertyInfo = memberExpression.Member as PropertyInfo;
-
-            if (propertyInfo == null)
-                throw new ArgumentException($"Expression '{expression.ToString()}' refers to a field, not a property.");
-
-            var type = typeof(TEntity);
-
-            if (type != propertyInfo.ReflectedType && !type.IsSubclassOf(propertyInfo.ReflectedType))
-                throw new ArgumentException($"Expresion '{expression.ToString()}' refers to a property that is not from type {type}.");
-
-            return propertyInfo.Name;
+            return await base.FindByKey(key, dbContext)
+                .SingleOrDefaultAsync();
         }
     }
 }

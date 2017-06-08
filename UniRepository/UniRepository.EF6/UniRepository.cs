@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using UniRepository.Core.Interfaces;
 
 namespace UniRepository.EF6
 {
-    internal class UniRepository<TEntity, TKey> : IUniRepository<TEntity, TKey>
+    internal class UniRepository<TEntity, TKey> : BaseUniRepository<TEntity, TKey>, IUniRepository<TEntity, TKey>
         where TKey : struct
         where TEntity : class, IEntity<TKey>
     {
@@ -16,29 +17,41 @@ namespace UniRepository.EF6
             _dbContext = dbContext;
         }
 
-        public TEntity FindByKey(TKey id)
+        public new IUniRepository<TEntity, TKey> Include(string path) 
+            => (IUniRepository<TEntity, TKey>)base.Include(path);
+
+        public new IUniRepository<TEntity, TKey> Include<TProperty>(Expression<Func<TEntity, TProperty>> expression) 
+            => (IUniRepository<TEntity, TKey>)base.Include(expression);
+
+        public TEntity FindByKey(TKey key)
         {
-            throw new NotImplementedException();
+            return base.FindByKey(key, _dbContext)
+                .SingleOrDefault();
         }
 
         public IQueryable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return base.GetAll(_dbContext);
         }
 
-        public IUniRepository<TEntity, TKey> Include<TProperty>(System.Linq.Expressions.Expression<Func<TEntity, TProperty>> expression)
+        public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Add(entity);
         }
 
-        public void Remove(TKey id)
+        public void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Remove(entity);
         }
 
-        public void Save(TEntity entity)
+        public void SaveChanges()
         {
-            throw new NotImplementedException();
+            _dbContext.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            _dbContext.Dispose();
         }
     }
 }

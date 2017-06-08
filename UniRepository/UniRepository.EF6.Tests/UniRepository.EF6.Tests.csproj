@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UniRepository.EF6.Tests</RootNamespace>
     <AssemblyName>UniRepository.EF6.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
@@ -70,17 +70,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\EntityCreator.cs" />
     <Compile Include="Mapper\AutoMapperWrapper.cs" />
     <Compile Include="Mock\DomainModel\BaseEntity.cs" />
     <Compile Include="Mock\DomainModel\Document.cs" />
-    <Compile Include="Mock\DomainModel\GroupType.cs" />
     <Compile Include="Mock\DomainModel\MockModel.cs" />
     <Compile Include="Mock\DomainModel\Tag.cs" />
     <Compile Include="Mock\DomainModel\User.cs" />
     <Compile Include="Mock\DomainModel\UsersGroup.cs" />
     <Compile Include="Mock\MockUniRepositoryManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UniRepositoryAsyncTests\UnitTest1.cs" />
+    <Compile Include="UniRepositoryAsyncTests\Bases\BaseIntegrationAsyncTest.cs" />
+    <Compile Include="UniRepositoryAsyncTests\SaveFindAndRemoveAsyncTests.cs" />
+    <Compile Include="UniRepositoryAsyncTests\IncludeReferencePropertiesAsyncTests.cs" />
+    <Compile Include="UniRepositoryTests\Bases\BaseIntegrationTest.cs" />
+    <Compile Include="UniRepositoryTests\IncludeReferencePropertiesTests.cs" />
+    <Compile Include="UniRepositoryTests\SaveFindAndRemoveTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UniRepository.Core\UniRepository.Core.csproj">

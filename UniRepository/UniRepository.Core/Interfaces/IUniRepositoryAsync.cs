@@ -9,6 +9,8 @@ namespace UniRepository.Core.Interfaces
         where TKey : struct
         where TEntity : class, IEntity<TKey>
     {
+        IUniRepositoryAsync<TEntity, TKey> Include(string path);
+
         IUniRepositoryAsync<TEntity, TKey> Include<TProperty>(Expression<Func<TEntity, TProperty>> expression);
 
         IQueryable<TEntity> GetAll();

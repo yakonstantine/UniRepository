@@ -5,11 +5,7 @@ namespace UniRepository.EF6.Tests.Mock.DomainModel
 {
     public class User : BaseEntity<Guid>
     {
-        public string FullName { get; set; }
-
-        public int Number { get; set; }
-
-        public DateTime BirthDate { get; set; }
+        public string Name { get; set; }
 
         public virtual ICollection<UsersGroup> UsersGroups { get; set; }
 

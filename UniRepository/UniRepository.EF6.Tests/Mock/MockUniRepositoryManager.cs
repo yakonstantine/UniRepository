@@ -22,6 +22,8 @@ namespace UniRepository.EF6.Tests.Mock
         {
             var context = new MockModel(_effortConnection);
             context.Database.CreateIfNotExists();
+            context.Configuration.LazyLoadingEnabled = false;
+            context.Configuration.ProxyCreationEnabled = false;
 
             return context;
         }

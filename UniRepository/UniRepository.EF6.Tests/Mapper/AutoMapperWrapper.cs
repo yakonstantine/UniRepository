@@ -9,7 +9,6 @@ namespace UniRepository.EF6.Tests.Mapper
             AutoMapper.Mapper.Initialize(x =>
             {
                 x.CreateMap<Document, Document>();
-                x.CreateMap<GroupType, GroupType>();
                 x.CreateMap<Tag, Tag>();
                 x.CreateMap<User, User>();
                 x.CreateMap<UsersGroup, UsersGroup>();

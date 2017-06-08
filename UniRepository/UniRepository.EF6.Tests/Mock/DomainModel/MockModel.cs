@@ -14,6 +14,9 @@ namespace UniRepository.EF6.Tests.Mock.DomainModel
 
         public virtual DbSet<UsersGroup> UsersGroups { get; set; }
 
-        public virtual DbSet<GroupType> GroupTypes { get; set; }
+        public virtual DbSet<Tag> Tags { get; set; }
+
+        public virtual DbSet<Document> Documents { get; set; }
+
     }
 }
