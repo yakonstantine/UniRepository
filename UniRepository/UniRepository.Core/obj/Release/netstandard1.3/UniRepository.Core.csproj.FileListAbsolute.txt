@@ -1,0 +1,6 @@
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Release\netstandard1.3\UniRepository.Core.deps.json
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Release\netstandard1.3\UniRepository.Core.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Release\netstandard1.3\UniRepository.Core.pdb
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Release\netstandard1.3\UniRepository.Core.AssemblyInfo.cs
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Release\netstandard1.3\UniRepository.Core.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\obj\Release\netstandard1.3\UniRepository.Core.pdb

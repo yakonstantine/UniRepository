@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Debug\netstandard1.3\UniRepository.Core.dll" target="lib\netstandard1.3\UniRepository.Core.dll" />
+    <file src="K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.Core\bin\Release\netstandard1.3\UniRepository.Core.dll" target="lib\netstandard1.3\UniRepository.Core.dll" />
   </files>
 </package>

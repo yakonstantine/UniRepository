@@ -1,0 +1,12 @@
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\UniRepository.EF6.dll.config
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\UniRepository.EF6.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\UniRepository.EF6.pdb
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\EntityFramework.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\EntityFramework.SqlServer.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\UniRepository.Core.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\UniRepository.Core.pdb
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\EntityFramework.xml
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\bin\Release\EntityFramework.SqlServer.xml
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\obj\Release\UniRepository.EF6.csprojResolveAssemblyReference.cache
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\obj\Release\UniRepository.EF6.dll
+K:\Work\yaGitHub\UniRepository\UniRepository\UniRepository.EF6\obj\Release\UniRepository.EF6.pdb
