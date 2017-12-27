@@ -1,0 +1,9 @@
+/.vs
+/UniRepository/.vs
+/UniRepository/packages
+/UniRepository/UniRepository.Core/bin
+/UniRepository/UniRepository.Core/obj
+/UniRepository/UniRepository.EF6/bin
+/UniRepository/UniRepository.EF6/obj
+/UniRepository/UniRepository.EF6.Tests/bin
+/UniRepository/UniRepository.EF6.Tests/obj
