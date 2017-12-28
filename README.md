@@ -3,12 +3,12 @@
 
 UniRepository is a generic repository pattern implementation for .Net (with async version), based on .Net Satndard. It's goal is to create REST repository for any entity in one click. 
 
-Now implemented support of Entity Framework 6, in the future will be implemented support of Entity Framework 7 and, after that, will be created the solution independent of ORM version. 
+Now implemented support of Entity Framework 6, in the future will be implemented support of Entity Framework Core and, after that, will be created the solution independent of ORM version. 
 
 ## Example of usage
 ### Creation of RepositoryManager
 ```c#
-// You should create your implementation of the RepositoryManager of the inherited BaseUniRepositoryManager
+// You should create your implementation of the RepositoryManager is inherited form BaseUniRepositoryManager
 public class MyRepositoryManager : BaseUniRepositoryManager
     {
         // This method should return a new version of your DbContext
